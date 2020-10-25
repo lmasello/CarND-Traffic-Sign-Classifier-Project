@@ -102,9 +102,10 @@ To train the model, I used the following parameters:
 
 The LeNet architecture has been taken as a base architecture for its well-recognized performance on image classification tasks. Then, a dropout layer has been added to avoid overfitting.  
 
-My final model results, which can be observed in the "Train, Validate and Test the Model" section, were:
+My final model results, which can be observed in the "Train, Validate and Test the Model" section, were (values between 0 and 1):
 * training set accuracy of 0.998
 * validation set accuracy of 0.943
+* test accuracy of 0.92
 
 
 ### Test a Model on New Images
@@ -129,7 +130,7 @@ Here are the results of the prediction:
 | Double curve			| Double curve							|
 
 
-The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100% on this small test set.
+The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100% on this small test set whereas with the bigger test set (12630 samples) it was 92%.
 
 #### 3. Top 5 softmax probabilities for each image along with the sign type of each probability.
 
