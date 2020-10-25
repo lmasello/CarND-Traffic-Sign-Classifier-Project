@@ -16,13 +16,13 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[random_traffic_signs]: ./traffic-signs-data/random_images_with_labels.png "Random images"
-[distribution_of_traffic_sign_types]: ./traffic-signs-data/distribution_of_labels.png "Distribution of labels"
-[distribution_of_traffic_sign_types_augmented]: ./traffic-signs-data/distribution_of_traffic_sign_types_augmented.png "Distribution of labels augmented"
-[grayscale]: ./traffic-signs-data/grayscale.png "Grayscale"
-[web_images]: ./traffic-signs-data/web_images.png "Web Traffic Signs"
-[softmax]: ./traffic-signs-data/softmax.png "Softmax of Web traffic signs"
-[conv_1]: ./traffic-signs-data/conv_1.png "Feature maps of the first convolutional layer"
+[random_traffic_signs]: ./img/random_images_with_labels.png "Random images"
+[distribution_of_traffic_sign_types]: ./img/distribution_of_labels.png "Distribution of labels"
+[distribution_of_traffic_sign_types_augmented]: ./img/distribution_of_traffic_sign_types_augmented.png "Distribution of labels augmented"
+[grayscale]: ./img/grayscale.png "Grayscale"
+[web_images]: ./img/web_images.png "Web Traffic Signs"
+[softmax]: ./img/softmax.png "Softmax of Web traffic signs"
+[conv_1]: ./img/conv_1.png "Feature maps of the first convolutional layer"
 
 ## Project Rubric
 Link to the project rubic: [rubric points](https://review.udacity.com/#!/rubrics/481/view).
@@ -39,7 +39,7 @@ signs data set:
 * The size of training set is 34799
 * The size of the validation set is 4410
 * The size of test set is 12630
-* The shape of a traffic sign image is 32x32x3 pixels
+* The shape of a traffic sign image is 32x32x3
 * The number of unique classes/labels in the data set is 43
 
 #### 2. Exploratory visualization of the dataset
