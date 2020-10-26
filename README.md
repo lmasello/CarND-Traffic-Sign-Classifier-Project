@@ -64,14 +64,17 @@ Then, I decided to convert the images to grayscale as it gave better results tha
 
 As the last step, I centred the data around zero to achieve better performance. To do so, I standardised the image data by subtracting the mean and dividing by the standard deviation.
 
+Ideas for future work:
+- Apply [histogram equalization](https://docs.opencv.org/2.4/doc/tutorials/imgproc/histograms/histogram_equalization/histogram_equalization.html) on the training set to improve contrast.
+- Augment the training set with image rotations.
 
 #### 2. Final model architecture
 
 My final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x1 Grayscale image   					| 
+| Layer         		|     Description	        					|
+|:---------------------:|:---------------------------------------------:|
+| Input         		| 32x32x1 Grayscale image   					|
 | Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x6 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride, same padding,  outputs 14x14x6	|
@@ -86,7 +89,7 @@ My final model consisted of the following layers:
 | Dropout				|												|
 | Fully connected 3		| Output 43										|
 |						|												|
- 
+
 
 
 #### 3. Training the model
@@ -121,9 +124,9 @@ The second and fourth images might be more challenging to classify because of th
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Speed limit (30km/h)	| Stop sign   									| 
+| Image			        |     Prediction	        					|
+|:---------------------:|:---------------------------------------------:|
+| Speed limit (30km/h)	| Stop sign   									|
 | End of speed limit (80km/h)| U-turn 										|
 | Vehicles over 3.5 metric tons prohibited			| Vehicles over 3.5 metric tons prohibited											|
 | Righ-of-way at the next intersection		| Righ-of-way at the next intersection					 				|
